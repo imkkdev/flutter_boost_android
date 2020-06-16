@@ -1,0 +1,10 @@
+
+include ':app'                                     // assumed existing content
+setBinding(new Binding([gradle: this]))                                 // new
+evaluate(new File(                                                      // new
+        settingsDir.parentFile,                                               // new
+        'flutter_module/.android/include_flutter.groovy'                          // new
+))
+///Users/lee/flutter/flutter_boost_hybrid/flutter_module/.android
+//include ':flutter_module'
+//project(':flutter_module').projectDir = new File('../flutter_module')
